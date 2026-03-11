@@ -1,0 +1,88 @@
+{
+  "name": "agrivision-api-gateway",
+  "version": "2.0.0",
+  "description": "Production-ready API Gateway for AgriVision - Agricultural Intelligence Platform with Security, Performance & East Africa Features",
+  "main": "api/server.js",
+  "scripts": {
+    "start": "node api/server.js",
+    "start:enhanced": "node api-gateway-enhanced.js",
+    "start:original": "node api-gateway.js",
+    "dev": "nodemon api/server.js",
+    "dev:enhanced": "nodemon api-gateway-enhanced.js",
+    "dev:original": "nodemon api-gateway.js",
+    "test": "node api/tests/api.test.js",
+    "test:jest": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint *.js",
+    "lint:fix": "eslint *.js --fix",
+    "docker:build": "docker build -t agrivision-api .",
+    "docker:run": "docker run -p 3000:3000 agrivision-api",
+    "logs:clear": "rm -rf logs/*.log",
+    "security:audit": "npm audit",
+    "security:fix": "npm audit fix"
+  },
+  "keywords": [
+    "agriculture",
+    "farming",
+    "api-gateway",
+    "weather",
+    "sms",
+    "mpesa",
+    "ai",
+    "ml",
+    "east-africa",
+    "kenya",
+    "tanzania",
+    "uganda",
+    "crop-diagnosis",
+    "soil-analysis",
+    "yield-prediction",
+    "market-intelligence",
+    "community",
+    "cooperative",
+    "sustainability",
+    "security",
+    "performance"
+  ],
+  "author": "AgriVision Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "bcrypt": "^5.1.1",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.5.1",
+    "express-validator": "^7.2.1",
+    "firebase-admin": "^11.11.1",
+    "helmet": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.1",
+    "multer": "^1.4.5-lts.1",
+    "node-cache": "^5.1.2",
+    "sharp": "^0.33.5",
+    "twilio": "^4.19.0",
+    "uuid": "^9.0.1",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "eslint": "^8.55.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agrivision/api-gateway.git"
+  },
+  "bugs": {
+    "url": "https://github.com/agrivision/api-gateway/issues"
+  },
+  "homepage": "https://github.com/agrivision/api-gateway#readme"
+}

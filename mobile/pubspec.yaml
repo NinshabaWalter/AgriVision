@@ -1,0 +1,151 @@
+name: agricultural_platform
+description: Agricultural Intelligence Platform for East African farmers
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI and Navigation
+  cupertino_icons: ^1.0.6
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+  
+  # State Management
+  provider: ^6.1.1
+  riverpod: ^2.4.9
+  flutter_riverpod: ^2.4.9
+  
+  # HTTP and API
+  http: ^1.1.2
+  dio: ^5.4.0
+  retrofit: ^4.0.3
+  json_annotation: ^4.8.1
+  
+  # Local Storage
+  sqflite: ^2.3.0
+  shared_preferences: ^2.2.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # Camera and Image Processing
+  camera: ^0.10.5+5
+  image_picker: ^1.0.4
+  image: ^4.1.3
+  
+  # Location Services
+  geolocator: ^10.1.0
+  geocoding: ^2.1.1
+  google_maps_flutter: ^2.5.0
+  
+  # Offline Capabilities
+  connectivity_plus: ^5.0.2
+  
+  # Authentication and Security
+  flutter_secure_storage: ^9.0.0
+  crypto: ^3.0.3
+  
+  # Notifications (temporarily disabled for web compilation)
+  # firebase_core: ^2.32.0
+  # firebase_messaging: ^14.7.10
+  flutter_local_notifications: ^17.2.3
+  
+  # File Handling
+  path_provider: ^2.1.1
+  permission_handler: ^11.1.0
+  
+  # UI Components
+  flutter_svg: ^2.0.9
+  cached_network_image: ^3.3.0
+  shimmer: ^3.0.0
+  lottie: ^2.7.0
+  
+  # Charts and Visualization
+  fl_chart: ^0.65.0
+  # syncfusion_flutter_charts: ^23.2.7  # Temporarily disabled due to dependency conflicts
+  
+  # Utils
+  uuid: ^4.2.1
+  timeago: ^3.6.0
+  url_launcher: ^6.2.2
+  
+  # Machine Learning
+  # tflite_flutter: ^0.10.4  # Temporarily disabled due to iOS build issues
+  
+  # QR Code
+  mobile_scanner: ^5.2.3  # Better cross-platform support
+  qr_flutter: ^4.1.0
+  
+  # Voice and Speech Recognition (Accessibility)
+  speech_to_text: ^6.6.0
+  flutter_tts: ^4.1.0
+  
+  # SMS Integration (Android only)
+  # telephony: ^0.2.0
+  
+  # Charts for Analytics
+  # syncfusion_flutter_charts: ^24.2.9  # Commented out due to version conflicts
+  
+  # Offline Maps
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  
+  # Bluetooth for IoT Sensors (Android only)
+  # flutter_bluetooth_serial: ^0.4.0
+  
+  # File Downloads and Exports
+  open_filex: ^4.5.0
+  
+  # Multi-language Support Enhancement
+  easy_localization: ^3.0.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Code Generation
+  build_runner: ^2.4.7
+  json_serializable: ^6.7.1
+  retrofit_generator: ^8.0.4
+  hive_generator: ^2.0.1
+  
+  # Linting
+  flutter_lints: ^3.0.1
+  
+  # Testing
+  mockito: ^5.4.4
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+    - assets/ml_models/
+  
+  # fonts:
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: assets/fonts/Roboto-Regular.ttf
+  #       - asset: assets/fonts/Roboto-Bold.ttf
+  #         weight: 700
+
+flutter_intl:
+  enabled: true
+  main_locale: en
+  arb_dir: lib/l10n
+  output_dir: lib/generated
+  output_localization_file: app_localizations.dart
+  locales:
+    - en
+    - sw  # Swahili
+    - am  # Amharic
+    - fr  # French

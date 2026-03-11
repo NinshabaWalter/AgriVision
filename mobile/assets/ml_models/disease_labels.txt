@@ -1,0 +1,9 @@
+healthy
+bacterial_blight
+brown_spot
+leaf_blast
+tungro
+bacterial_leaf_streak
+sheath_blight
+leaf_scald
+narrow_brown_spot
