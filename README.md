@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌾 AgriVision - Agricultural Intelligence Platform
 
 A comprehensive agricultural intelligence platform designed specifically for East African farmers, providing AI-powered crop disease detection, weather predictions, market insights, and financial services.
@@ -396,3 +397,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Built with ❤️ for East African farmers**
 
 *Empowering agriculture through technology*
+=======
+# AgriVision
+AgriVision is a computer vision system designed to help farmers detect crop diseases using AI.
+>>>>>>> 7b5e2353cf55dfe0848193881eb48658434db7ac
